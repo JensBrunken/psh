@@ -38,4 +38,12 @@ class ScriptsPath
     {
         return $this->path;
     }
+
+    /**
+     * @return bool
+     */
+    public function isValid(): bool
+    {
+        return is_dir($this->path);
+    }
 }
